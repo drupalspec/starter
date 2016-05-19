@@ -7,7 +7,7 @@
 
 ## project tree
 * src
-** jade
+- jade
 ** styl
 ** img
 ** fonts
