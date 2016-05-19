@@ -3,20 +3,14 @@
 * Clone repository
 * MV all files from starter folder in root folder
 * Remove starter folder
-* Call npm i in terminal
 
-## project tree
-* src
-- jade
-** styl
-** img
-** fonts
-** js
-* build
-** .html
-** css
-** img
-** fonts
-** js
+## Project tree
+* src - source files
+* build - compile files
+
+## How to use it
+* Call npm i command
+* Call gulp command
+* Open browser on localhost:40000
 
 
