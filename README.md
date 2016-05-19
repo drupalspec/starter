@@ -1,6 +1,9 @@
 ## Get started
 * Create new folder for your project
-* Clone repository git clone https://github.com/drupalspec/starter.git
+* Clone repository 
+```sh
+git clone https://github.com/drupalspec/starter.git
+```
 * MV all files from starter folder in root folder
 * Remove starter folder
 
