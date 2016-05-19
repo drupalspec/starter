@@ -5,6 +5,10 @@
 git clone https://github.com/drupalspec/starter.git
 ```
 * MV all files from starter folder in root folder
+```sh
+cd starter
+mv * ..
+```
 * Remove starter folder
 
 ## Project tree
