@@ -1,4 +1,4 @@
-var sources, destinations, lr, gulp, gutil, jade, styl, browserSync, reload;
+var sources, destinations, lr, gulp, gutil, jade, styl, browserSync, reload, concat;
 
 gulp = require('gulp');
 jade = require('gulp-jade');
@@ -8,6 +8,7 @@ imagemin = require('gulp-imagemin');
 pngquant = require('imagemin-pngquant');
 uglify = require('gulp-uglify');
 browserSync = require('browser-sync');
+concat = require('gulp-concat');
 reload = browserSync.reload;
 
 sources = {
@@ -34,9 +35,12 @@ gulp.task("jade", function(event) {
 });
 
 gulp.task("styl", function(event) {
-  return gulp.src("src/styl/**/*.styl").pipe(styl({
-    style: "compressed"
+  return gulp.src("src/styl/**/*.styl")
+  .pipe(styl({
+    style: "compressed",
+    compress: true
   }))
+  .pipe(concat('main.css'))
   .pipe(gulp.dest(destinations.css));
 });
 
